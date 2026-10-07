@@ -131,7 +131,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenSettings, onOpenKeyboardHelp }
         {/* Row 1: Signature Wordmark (Dominant & Bold) + Header Actions */}
         <div className="flex items-center justify-between w-full">
           {/* Big App Name with signature typography & byline */}
-          <SignatureBrand size="large" metadata="1 . 2   P R O" />
+          <SignatureBrand size="large" />
 
           {/* Settings & Keyboard actions */}
           <div className="flex items-center gap-2">

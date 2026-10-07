@@ -11,7 +11,7 @@ interface SignatureBrandProps {
 export const SignatureBrand: React.FC<SignatureBrandProps> = ({
   size = 'large',
   accentColor = 'bg-cyan-500',
-  metadata = '1 . 2   P R O',
+  metadata,
   className = '',
 }) => {
   const isLarge = size === 'large';
@@ -62,15 +62,17 @@ export const SignatureBrand: React.FC<SignatureBrandProps> = ({
           BY SOURAV
         </span>
 
-        {/* Thin vertical separator */}
-        <span className={`${isLight ? 'text-slate-300' : 'text-neutral-600'} font-light scale-y-90`}>
-          |
-        </span>
-
         {/* Metadata */}
-        <span className="tracking-[0.22em] font-medium">
-          {metadata}
-        </span>
+        {metadata && (
+          <>
+            <span className={`${isLight ? 'text-slate-300' : 'text-neutral-600'} font-light scale-y-90`}>
+              |
+            </span>
+            <span className="tracking-[0.22em] font-medium">
+              {metadata}
+            </span>
+          </>
+        )}
       </div>
     </div>
   );

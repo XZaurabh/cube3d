@@ -31,7 +31,7 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
         onClick={() => setActivePage('home')}
         className="focus:outline-none hover:opacity-90 transition-opacity"
       >
-        <SignatureBrand size="normal" metadata="1 . 2   P R O" />
+        <SignatureBrand size="normal" />
       </button>
 
       {/* Zone 2: Navigation Links */}
