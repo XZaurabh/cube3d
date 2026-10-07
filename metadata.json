@@ -1,0 +1,6 @@
+{
+  "name": "Cube",
+  "description": "A sleek 3D Rubik's Cube game and solver supporting 2x2 to 6x6 cubes with realistic touch controls and automatic solver.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
